@@ -1,0 +1,96 @@
+
+.modules-container {float:left;position: relative;padding-top:44px;}
+.modules-container .modules {background-color: #b3daf7;padding: 20px;margin-bottom: 20px;z-index: 1;border-radius: 10px;}
+.modules-container .step {display:block;height: 42px;line-height: 42px;position: absolute;font-size: 20px;font-weight: 700;padding-left:30px;}
+.modules-container .step1 {left:3px;top:0;background: url('../images/system/step1.jpg') 0 0 no-repeat;}
+.modules-container .step2 {left:3px;top:0;background: url('../images/system/step2.jpg') 0 0 no-repeat;}
+.modules-container .step3 {left:3px;top:0;background: url('../images/system/step3.jpg') 0 0 no-repeat;}
+
+#coor-y {width: 30px;position: absolute;left:-20px;top:0;}
+#coor-y span {font-weight:700;display: block;text-align: right;}
+
+#dropzone {padding: 20px;background: #eee;min-height: 100px;z-index: 0;border-radius: 10px;background-color: #b3daf7;}
+
+#coor-x {padding-left:13px;margin-bottom: 20px;overflow: hidden;height:20px;}
+#coor-x span {display:block;width: 70px;float: left;font-weight:700;}
+#coor-x span:first-child {padding-left:7px;}
+
+.active {outline: 1px solid red;}
+.hover {outline: 1px solid blue;}
+.gc {float:left;overflow: hidden;height:414px;}
+.details {margin:0;}
+
+.drop-item {cursor: pointer;background-color: rgb(255, 255, 255);border-radisu: 3px;border: 1px solid rgb(204, 204, 204);position: relative;}
+.drop-item .remove {position: absolute;top: 4px;right: 4px;}
+
+.drag-item {position: absolute;top:0;left:0;display:none;}
+.drag-item.com0-3-1 {top:32px;left:4px;}	
+.drag-item.com0-4-2 {top:12px;left:4px;}
+.drag-item.com0-4-1 {top:48px;left:4px;}
+
+.drag-item.com1-2-1 {top:4px;left:4px;}
+.drag-item.com1-2-2 {top:120px;left:4px;}
+.drag-item.com1-3-1 {top:36px;left:4px;}
+.drag-item.com1-3-2 {top:66px;left:4px;}
+.drag-item.com1-3-3 {top:96px;left:4px;}
+.drag-item.com1-3-4 {top:194px;left:4px;}
+.drag-item.com1-3-5 {top:274px;left:4px;}
+.drag-item.com1-4-1 {top:285px;left:4px;}
+.drag-item.com1-4-2 {top:246px;left:4px;}
+.drag-item.com1-4-3 {top:207px;left:4px;}
+.drag-item.com1-4-4 {top:168px;left:4px;}
+.drag-item.com1-5-1 {top:46px;left:6px;}
+
+.drag-item.com2-12-1 {top:32px;left:4px;}	
+.drag-item.com2-13-1 {top:48px;left:4px;}
+.drag-item.com2-13-2 {top:12px;left:4px;}
+.drag-item.com2-14-2 {top:48px;left:4px;}
+.drag-item.com2-14-1 {top:12px;left:4px;}
+
+.drag-item.com3-6-1 {top:0px;left:0px;}
+.drag-item.com3-7-1 {top:0px;left:0px;}
+.drag-item.com3-8-1 {top:0px;left:0px;}
+.drag-item.com3-13-1 {top:285px;left:4px;}
+.drag-item.com3-13-2 {top:246px;left:4px;}
+.drag-item.com3-13-3 {top:207px;left:4px;}
+.drag-item.com3-13-4 {top:168px;left:4px;}
+.drag-item.com3-10-2 {top:156px;left:-1px;}
+.drag-item.com3-10-1 {top:235px;left:-1px;}
+.drag-item.com3-15-1 {top:156px;left:4px;}
+.drag-item.com3-11-1 {top:10px;left:4px;}
+.drag-item.com3-11-2 {top:156px;left:4px;}
+.drag-item.com3-16-1 {top:46px;left:6px;}
+.drag-item.com3-16-2 {top:46px;left:82px;}
+.drag-item.com3-14-1 {top:156px;left:4px;}
+.drag-item.com3-14-2 {top:173px;left:4px;}
+.drag-item.com3-14-3 {top:235px;left:4px;}
+.drag-item.com3-14-4 {top:260px;left:4px;}
+.drag-item.com3-12-1 {top:30px;left:4px;}
+.drag-item.com3-12-2 {top:60px;left:4px;}
+.drag-item.com3-12-3 {top:90px;left:4px;}
+.drag-item.com3-12-4 {top:120px;left:4px;}
+.drag-item.com3-12-5 {top:210px;left:4px;}
+
+.drag-item.com4-13-1 {top:130px;left:4px;}
+.drag-item.com4-13-2 {top:91px;left:4px;}
+.drag-item.com4-13-3 {top:52px;left:4px;}
+.drag-item.com4-13-4 {top:13px;left:4px;}
+.drag-item.com4-10-1 {top:80px;left:-1px;}
+.drag-item.com4-10-2 {top:1px;left:-1px;}
+.drag-item.com4-12-1 {top:10px;left:4px;}
+.drag-item.com4-12-2 {top:64px;left:4px;}
+.drag-item.com4-12-3 {top:90px;left:4px;}
+
+
+.modal.fade.in {top: 50%;}
+/*.modal.fade {top: -25%;transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;}*/
+.modal {background-clip: padding-box;background-color: #ffffff;border: 1px solid rgba(0, 0, 0, 0.3);border-radius: 6px;box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);left: 50%;margin: -250px 0 0 -280px;max-height: 162px;overflow: auto;position: fixed;top: 50%;width: 560px;z-index: 1050;height: auto!important;}
+.fade {opacity: 0;transition: opacity 0.15s linear 0s;}
+
+.remove {display: none;}
+
+.btn-com {background-color: #fff;}
+.btn-com:hover {background-color: #ffffca;}
+
+.table thead tr {background-color: #b3daf7;}
+.table th {border:0!important;}

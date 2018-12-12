@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基于jQuery UI和Bootstrap的元素拖拽DEMO演示</title>  
+    
+    <link rel="stylesheet" href="css/jquery-ui.css" media="screen" type="text/css" />
+		
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />	
+</head>
+<body> 
+<div class="container" style="width:1200px;">
+    <!--清单-->
+    <div class="container-fluid">
+	<div class="row-fluid">
+    <div class="span12">
+    <table class="table" id="detailList">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>产品名</th>
+            <th>门板</th>
+            <th>小门板</th>
+            <th>吊杆</th>
+            <th>层板</th>
+            <th>拉篮</th>
+            <th>门镜</th>
+        </tr>
+        </thead>
+        <tbody>		
+        </tbody>
+    </table>
+    </div>
+	</div>
+    </div>
+    <!--清单 end-->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="modules" style="overflow:hidden;">
+             	<p class="drag dragBase " style="float:left;"><a class="btn btn-default" title="顶柜" rel="images/W40192-/W4045.png,317,顶柜,1_1-2_1-3_1-4_2,0"><img src="images/W40192/W4045.png" alt="顶柜"/></a></p>    
+             	<p class="drag dragBase" style="float:left;"><a class="btn btn-default" title="柜体" rel="images/W40192-/W40192.png,317,柜体,0_1-2_2-3_4-4_4-5_1,1"><img src="images/W40192/W40192.png" alt="柜体"/></a></p>         	
+            </div>
+            <div class="modules" style="overflow:hidden;">
+             	<p class="drag dragCom" style="float:left;"><a class="btn btn-default" title="门板" rel="0"><img src="images/W40192/W40188-D1.png" alt="门板"/></a></p>
+             	<div style="float:left;">	             	
+	             	<p class="drag dragCom"><a class="btn btn-default" title="小门板" rel="1"><img src="images/W40192/W40188-D4.png" alt="小门板"/></a></p>
+	             	<p class="drag dragCom"><a class="btn btn-default" title="吊杆" rel="2"><img src="images/W40192/W40188-HG.png" alt="吊杆"/></a></p>
+	             	<p class="drag dragCom"><a class="btn btn-default" title="层板" rel="3"><img src="images/W40192/W40188-SB.png" alt="层板"/></a></p>
+	             	<p class="drag dragCom"><a class="btn btn-default" title="拉篮" rel="4"><img src="images/W40192/WD40.png" alt="拉篮"/></a></p>
+             	</div>    
+             	<p class="drag dragCom" style="float:left;"><a class="btn btn-default" title="门镜" rel="5,0,门板"><img src="images/W40192/MR12030.png" alt="门镜"/></a></p>
+            </div>
+        </div>
+        <div class="col-sm-8">			
+			<!--<a href="#" id="example" class="btn btn-success" rel="popover">hover for popover</a>-->
+            <div id="dropzone" style="height:auto;min-height: 726px;overflow:hidden;">				
+			</div>
+            <!--<button class="btn btn-primary pull-right">Save</button>-->
+        </div>
+    </div>
+	
+	<!--提示框-->
+	<div id="tipspop" class="modal fade in" style="display: none;">		
+		<div class="modal-body">
+			<p>You can add some text here.</p>
+		</div>
+		<div class="modal-footer">
+			<a href="javascript:void(0);" class="btn btn-success" data-dismiss="modal">确定</a>
+		</div>			
+	</div>
+	<!--提示框 end-->
+	
+	<!--组合框-->
+	<div title="顶柜" id="comgroup0" style="display:none;">				
+		<div title="吊杆" class="drag-item com0-2-1">
+			<details><img src="images/W40192-/W40188-HG.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="层板" class="drag-item com0-3-1">
+			<details><img src="images/W40192-/W40188-SB.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com0-4-1">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com0-4-2">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="小门板" class="drag-item com0-1-1">
+			<details><img src="images/W40192-/W40188-D4.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>
+	<div title="柜体" id="comgroup1" style="display:none;">				
+		<div title="吊杆" class="drag-item com1-2-1">
+			<details><img src="images/W40192-/W40188-HG.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="吊杆" class="drag-item com1-2-2">
+			<details><img src="images/W40192-/W40188-HG.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="层板" class="drag-item com1-3-1">
+			<details><img src="images/W40192-/W40188-SB.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="层板" class="drag-item com1-3-2">
+			<details><img src="images/W40192-/W40188-SB.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="层板" class="drag-item com1-3-3">
+			<details><img src="images/W40192-/W40188-SB.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="层板" class="drag-item com1-3-4">
+			<details><img src="images/W40192-/W40188-SB.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com1-4-1">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com1-4-2">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com1-4-3">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="拉篮" class="drag-item com1-4-4">
+			<details><img src="images/W40192-/WD40.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="门板" class="drag-item com1-0-1">
+			<details><img src="images/W40192-/W40188-D1.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '0', '5,门镜')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="门镜" class="drag-item com1-5-1">
+			<details><img src="images/W40192-/MR12030.png"></details>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '5')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>	
+	</div>
+	<!--组合框 end-->
+	
+</div>
+<div style="text-align:center;clear:both;"></div>
+
+<script src='js/jquery-1.12.2.js'></script>
+<script src='js/jquery-ui.js'></script>
+<script src='js/bootstrap.min.js'></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+
+</body>
+</html>

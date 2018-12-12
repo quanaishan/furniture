@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>W80188系列衣櫃估價</title>  
+    
+    <link rel="stylesheet" href="css/jquery-ui.css" media="screen" type="text/css" />
+		
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <!--<link rel="stylesheet" href="css/bootstrap.css" media="screen" type="text/css" />-->
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />	
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="screen" type="text/css" />	
+</head>
+<body> 
+<div class="container" style="width:1230px;">  
+    <div class="row" style="margin-top: 20px;">        
+        <div class="col-sm-12" style='position: relative;margin-bottom:60px;'>	
+            <div style="position:absolute;top:0;left:0;">
+                <img src="images/system/logo.jpg" /><span style="margin-left:10px;vertical-align: top;font-size: 32px;font-weight:700;">W80188 系統衣櫃試算</span>
+            </div>          
+            <div style="position:absolute;top:6px;right:28px;">
+                <a href="http://faq.goezgo.tw/" target="_blank"><img src="images/system/logo1.jpg" /></a>
+                <a href="http://www.goezgo.tw/" target="_blank"><img src="images/system/logo2.jpg" /></a>
+                <a href="https://www.facebook.com/goezgo" target="_blank"><img src="images/system/logo3.jpg" /></a>
+                <a href="https://www.youtube.com/user/goezgotw" target="_blank"><img src="images/system/logo4.jpg" /></a>
+                <a href="https://3dwarehouse.sketchup.com/search.html?redirect=1&q=goezgo&styp=m&btng=Search&scoring=d&backendclass=entity&sortby=modifyTime%20DESC&hl=zh-TW" target="_blank"><img src="images/system/logo5.jpg" /></a>
+                <a href="https://www.google.com/maps/place/320%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E6%96%B0%E5%8C%97%E5%9C%92%E8%B7%AF5%E8%99%9F/@24.989028,121.239562,17z/data=!3m1!4b1!4m2!3m1!1s0x346821ecf1e742af:0xdc2e8dddec4a6da0" target="_blank"><img src="images/system/logo6.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">        
+        <div class="col-sm-12" style='position: relative;'>	
+            <div id="coor-y">
+                <span style='padding-top:16px;'>237</span>
+                <span style='padding-top:57px;'>192</span>
+                <span style='padding-top:137px;'>102</span>
+                <span style='padding-top:153px;'>0</span>
+            </div>
+            <div id="dropzone" style="height:auto;min-height: 471px;overflow:hidden;text-align: center;">	
+                <div style="color:#0000FF;font-size:12px;">在門板上按下滑鼠左鍵可顯示內部配件</div>
+			</div>
+            <div id="coor-x"></div>            
+            <input type='hidden' id='isfirstbase' value='1'/>     
+            <input type='hidden' id='mousedown' value='0'/>  
+        </div>
+    </div>
+	<div class="row">
+		<div class="col-sm-12">
+			<!--第一组配件-->
+            <div class="modules-container">
+                <span class="step1 step" style="">請先選擇櫃體拖曳到上方顯示區</span>
+                <div class="modules col-sm-4" style="width: 398px;margin-right:10px;">
+                    <div style="float:left;margin-right:5px;">
+<!--                        <p class="drag dragBase "><a class="btn btn-default btn-com" title="W4045頂櫃" rel="images/W40192-/W4045.png,70,W4045頂櫃,1_1-3_1-4_2,0"><img src="images/W40192/W4045.png" alt="W4045頂櫃"/></a></p>    -->
+                        <p class="drag dragBase "><a class="btn btn-default btn-com" title="W4045頂櫃" rel="images/W40192-/W4045.png,70,W4045頂櫃,1_1-3_1,0"><img src="images/W40192/W4045.png" alt="W4045頂櫃"/></a></p>
+                        <p class="drag dragBase" style="margin-top:10px;"><a class="btn btn-default btn-com" title="W40192衣櫃" rel="images/W40192-/W40192.png,70,W40192衣櫃,0_1-2_2-3_5-4_4-5_1,1"><img src="images/W40192/W40192-1.png" alt="W40192衣櫃"/></a></p> 	
+                    </div>
+                    <div style="float:left;margin-right:5px;">
+                        <!--<p class="drag dragBase"><a class="btn btn-default btn-com" title="W8045頂櫃" rel="images/W80192-/W8045.png,140,W8045頂櫃,9_1-12_1-13_2-14_2,2"><img src="images/W80192/W8045.png" alt="W8045頂櫃"/></a></p>-->
+                        <p class="drag dragBase"><a class="btn btn-default btn-com" title="W8045頂櫃" rel="images/W80192-/W8045.png,140,W8045頂櫃,9_1-12_1,2"><img src="images/W80192/W8045.png" alt="W8045頂櫃"/></a></p>
+                        <p class="drag dragBase"><a class="btn btn-default btn-com" title="W80192衣櫃" rel="images/W80192-/W80192.png,140,W80192衣櫃,6_1-7_1-8_1-10_2-11_2-12_5-13_4-15_1-14_4-16_2,3"><img src="images/W80192/W80192.png" alt="W80192衣櫃"/></a></p>	
+                    </div>
+                    <p class="drag dragBase" style="float:left;margin-top:144px;"><a class="btn btn-default btn-com" title="W8098櫃子" rel="images/W80192-/W8098.png,140,W8098櫃子,10_2-13_4-12_3,4"><img src="images/W80192/W8098.png" alt="W8098櫃子"/></a></p>                    
+                </div>                 
+            </div>
+            
+			<!--第一组配件 end-->
+			<!--第二组配件-->
+            <div class="modules-container">
+                <span class="step2 step" style="">40cm櫃體配件</span>
+                <div class="modules col-sm-4" style="width: 252px;margin-right:10px;">
+                    <p class="drag dragCom" style="float:left;margin-right:5px;"><a class="btn btn-default btn-com" title="40cm門板" rel="0"><img src="images/W40192/W40188-D1.png" alt="40cm門板"/></a></p>
+                    <div style="float:left;margin-right:5px;">	             	
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="40cm小門板" rel="1"><img src="images/W40192/W40188-D4.png" alt="40cm小門板"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="40cm吊衣桿" rel="2"><img src="images/W40192/W40188-HG.png" alt="40cm吊衣桿"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="40cm層板" rel="3"><img src="images/W40192/W40188-SB.png" alt="40cm層板"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="40cm拉籃" rel="4"><img src="images/W40192/WD40.png" alt="40cm拉籃"/></a></p>
+                    </div>    
+                    <p class="drag dragCom" style="float:left;"><a class="btn btn-default btn-com" title="40cm門鏡" rel="5"><img src="images/W40192/MR12030.png" alt="40cm門鏡"/></a></p>
+                </div>
+            </div>
+			<!--第二组配件 end-->
+			<!--第三组配件-->		
+            <div class="modules-container">
+                <span class="step3 step" style="">80cm櫃體配件</span>
+                <div class="modules col-sm-4" style="width: 530px;">
+                    <div style="float:left;margin-right:5px;">	    
+                        <p class="drag dragCom" style="float:left;margin-right:5px;"><a class="btn btn-default btn-com" title="80cm門板" rel="6"><img src="images/W80192/W80188-D1.png" alt="80cm門板"/></a></p>
+                        <p class="drag dragCom" style="float:left;margin-right:5px;"><a class="btn btn-default btn-com" title="80cm雙抽屜門板" rel="7"><img src="images/W80192/W80188-D2.png" alt="80cm雙抽屜門板"/></a></p>
+                        <p class="drag dragCom" style="float:left;margin-right:5px;"><a class="btn btn-default btn-com" title="80cm四抽屜門板" rel="8"><img src="images/W80192/W80188-D3.png" alt="80cm四抽屜門板"/></a></p>	
+                    </div>             	
+                    <div style="float:left;margin-right:5px;">	             	
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm小門板" rel="9"><img src="images/W80192/W80188-D4.png" alt="80cm小門板"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm雙抽屜" rel="10"><img src="images/W80192/W80188-C.png" alt="80cm雙抽屜"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm吊衣桿" rel="11"><img src="images/W80192/W80188-HG.png" alt="80cm吊衣桿"/></a></p>	             	
+                    </div> 
+                    <div style="float:left;margin-right:5px;">	     
+                        <p class="drag dragCom" style="margin-bottom:13px;"><a class="btn btn-default btn-com" title="80cm層板" rel="12"><img src="images/W80192/W80188-SB.png" alt="80cm層板"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm拉籃" rel="13"><img src="images/W80192/WD80.png" alt="80cm拉籃"/></a></p>
+                    </div> 
+                    <div style="float:left;margin-right:5px;">	     
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm格抽" rel="14"><img src="images/W80192/WG80.png" alt="80cm格抽"/></a></p>
+                        <p class="drag dragCom"><a class="btn btn-default btn-com" title="80cm吊褲架" rel="15"><img src="images/W80192/WK80.png" alt="80cm吊褲架"/></a></p>
+                    </div> 
+                    <p class="drag dragCom" style="float:left;"><a class="btn btn-default btn-com" title="80cm門鏡" rel="16"><img src="images/W80192/MR12030.png" alt="80cm門鏡"/></a></p>
+                </div>
+            </div>    
+			<!--第三组配件 end-->
+        </div>
+	</div>	
+	<!--组合框-->
+	<!--comgroup4-->
+	<div title="w8098櫃子" id="comgroup4" style="display:none;">	
+		<div title="80cm層板" class="drag-item com4-12-1">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com4-12-2">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com4-12-3">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com4-13-1">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com4-13-2">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com4-13-3">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com4-13-4">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>	
+		<div title="80cm雙抽屜" class="drag-item com4-10-1">
+			<p class="details"><img src="images/W80192-/W80188-C.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '10')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm雙抽屜" class="drag-item com4-10-2">
+			<p class="details"><img src="images/W80192-/W80188-C.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '4', '10')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>	
+	<!--comgroup4 end-->
+	<!--80寬衣櫃 可选2支吊衣杆  （2支吊衣杆不能在装其他）-->
+	<!--5片層板，4个拉籃，1个吊褲架，4个领带格抽，4个抽屉，1片門板上可装1片镜子 （1个吊褲架、4个拉籃、4个领带格抽，4个抽屉只能加购1支吊衣杆）-->
+	<!--6_1-7_1-8_1-10_2-11_2-12_5-13_4-15_1-14_4-16_2-->
+	<!--comgroup3-->
+	<div title="80寬衣櫃" id="comgroup3" style="display:none;">	
+		<div title="80cm層板" class="drag-item com3-12-1">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com3-12-1">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com3-12-2">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com3-12-3">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com3-12-4">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com3-12-5">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		
+		<div title="80cm拉籃" class="drag-item com3-13-1">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com3-13-2">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com3-13-3">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com3-13-4">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>			
+		<div title="80cm格抽" class="drag-item com3-14-1">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm格抽" class="drag-item com3-14-2">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm格抽" class="drag-item com3-14-3">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm格抽" class="drag-item com3-14-4">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm吊褲架" class="drag-item com3-15-1">
+			<p class="details"><img src="images/W80192-/WK80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '15')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm吊衣桿" class="drag-item com3-11-1">
+			<p class="details"><img src="images/W80192-/W80188-HG.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '11')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm吊衣桿" class="drag-item com3-11-2">
+			<p class="details"><img src="images/W80192-/W80188-HG.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '11')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm雙抽屜" class="drag-item com3-10-1">
+			<p class="details"><img src="images/W80192-/W80188-C.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '10')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm雙抽屜" class="drag-item com3-10-2">
+			<p class="details"><img src="images/W80192-/W80188-C.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '10')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm門板" class="drag-item com3-6-1 mousedown">
+			<p class="details"><img src="images/W80192-/W80188-D1.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '6', '16,門鏡')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm雙抽屜門板" class="drag-item com3-7-1 mousedown">
+			<p class="details"><img src="images/W80192-/W80188-D2.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '7', '16,門鏡')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm四抽屜門板" class="drag-item com3-8-1 mousedown">
+			<p class="details"><img src="images/W80192-/W80188-D3.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '8')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm門鏡" class="drag-item com3-16-1 mousedown">
+			<p class="details"><img src="images/W80192-/MR12030.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '16')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm門鏡" class="drag-item com3-16-2 mousedown">
+			<p class="details"><img src="images/W80192-/MR12030.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '3', '16')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>
+	<!--comgroup3 end-->
+	<!--comgroup2-->
+	<div title="80寬頂櫃" id="comgroup2" style="display:none;">			
+		<div title="80cm拉籃" class="drag-item com2-13-1">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm拉籃" class="drag-item com2-13-2">
+			<p class="details"><img src="images/W80192-/WD80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '13')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm格抽" class="drag-item com2-14-1">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm格抽" class="drag-item com2-14-2">
+			<p class="details"><img src="images/W80192-/WG80.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '14')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm層板" class="drag-item com2-12-1">
+			<p class="details"><img src="images/W80192-/W80188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '12')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="80cm小門板" class="drag-item com2-9-1 mousedown">
+			<p class="details"><img src="images/W80192-/W80188-D4.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '2', '9')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>
+	<!--comgroup2 end-->
+	<!--comgroup0-->
+	<div title="40寬頂櫃" id="comgroup0" style="display:none;">			
+		<div title="40cm拉籃" class="drag-item com0-4-1">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '0', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com0-3-1">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '0', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm拉籃" class="drag-item com0-4-2">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '0', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm小門板" class="drag-item com0-1-1 mousedown">
+			<p class="details"><img src="images/W40192-/W40188-D4.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '0', '1')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>
+	<!--comgroup0 end-->
+	<!--comgroup1-->
+	<div title="40寬衣櫃" id="comgroup1" style="display:none;">				
+		<div title="40cm吊衣桿" class="drag-item com1-2-1">
+			<p class="details"><img src="images/W40192-/W40188-HG.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '2')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm吊衣桿" class="drag-item com1-2-2">
+			<p class="details"><img src="images/W40192-/W40188-HG.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '2')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>	
+		<div title="40cm拉籃" class="drag-item com1-4-1">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm拉籃" class="drag-item com1-4-2">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm拉籃" class="drag-item com1-4-3">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm拉籃" class="drag-item com1-4-4">
+			<p class="details"><img src="images/W40192-/WD40.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '4')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com1-3-1">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com1-3-2">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com1-3-3">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com1-3-4">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm層板" class="drag-item com1-3-5">
+			<p class="details"><img src="images/W40192-/W40188-SB.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '3')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm門板" class="drag-item com1-0-1 mousedown">
+			<p class="details"><img src="images/W40192-/W40188-D1.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '0', '5,門鏡')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+		<div title="40cm門鏡" class="drag-item com1-5-1 mousedown">
+			<p class="details"><img src="images/W40192-/MR12030.png"></p>
+			<button class="btn btn-default btn-xs remove" type="button" onclick="delcom($(this), '1', '5')"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>	
+	</div>
+	<!--comgroup1 end-->
+	<!--组合框 end-->
+	<!--清单-->
+    <div class="container-fluid">
+	<div class="row-fluid">
+    <div class="span12">
+    <table class="table" id="detailList0">
+        <thead>
+        <tr>
+            <th>40cm櫃體</th>
+            <th>產品名稱</th>
+            <th>門板<br />$800</th>
+            <th>小門板<br />$300</th>
+            <th>吊衣桿<br />$100</th>
+            <th>層板<br />$180</th>
+            <th>拉籃<br />$500</th>
+            <th>門鏡<br />$600</th>
+        </tr>
+        </thead>
+        <tbody>		
+        </tbody>
+    </table>
+    </div>
+	</div>
+    </div>
+    <!--清单 end-->
+	<!--清单2-->
+    <div class="container-fluid">
+	<div class="row-fluid">
+    <div class="span12">
+    <table class="table" id="detailList1">
+        <thead>
+        <tr>
+            <th>80cm櫃體</th>
+            <th>產品名稱</th>
+            <th>門板<br />$1,500</th>
+			<th>雙抽屜門板<br />$3,100</th>
+			<th>四抽屜門板<br />$4,900</th>			
+            <th>小門板<br />$500</th>
+            <th>雙抽屜<br />$2,000</th>
+			<th>吊衣桿<br />$200</th>
+            <th>層板<br />$350</th>
+            <th>拉籃<br />$700</th>
+			<th>格抽<br />$1,750</th>
+			<th>吊褲架<br />$1,750</th>
+            <th>門鏡<br />$600</th>
+        </tr>
+        </thead>
+        <tbody>		
+        </tbody>
+    </table>
+    </div>
+	</div>
+    </div>
+    <!--清单2 end-->	
+    
+    <!--清单3-->
+    <div class="container-fluid">
+	<div class="row-fluid">
+    <div class="span12">
+    <table class="table" id="total_price">
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>白色櫃體</th>
+            <th>黑胡桃櫃體</th>
+        </tr>
+        </thead>
+        <tbody>	
+        <tr>
+            <td style="font-weight:700;">合計</td>
+            <td id="price_white">NT$0</td>
+            <td id="price_black">NT$0</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="color: red;font-weight: 700;">
+            注意事項：
+            <ul>
+                <li>以上試算資料僅供消費者參考(不含運送、安裝與稅金)，實際價格以GOezGO便利購正式報價單為準！</li>
+                <li>如需進一步的送貨與安裝服務，請複製上方的試算資料明細，並提供送貨地址+樓層，寄到&nbsp;<img src="images/system/email.png"/> ​，或來電  <a href="http://faq.goezgo.tw/#TOC--2">http://faq.goezgo.tw/#TOC--2</a>，會有專人提供您相關的商品報價與諮詢！   </li>
+            </ul>    
+            </td>
+        </tr>
+		<tr>
+            <td colspan="3" style="color: red;font-weight: 700;">
+            組裝費 = <span id="price_package">NT$0</span>
+            <ul>
+                <li>200公分以上高櫃25元/公分*寬度，200公分以下高櫃16元/公分*寬度，100公分以下高櫃12元/公分*寬度</li>
+				<li>疊櫃10元/公分*寬度，滑軌類商品@100/個</li>
+            </ul>    
+            </td>
+        </tr>
+		<tr>
+            <td colspan="3" style="color: red;font-weight: 700;">
+            運費：<a href="http://faq.goezgo.tw/jpg/freight.jpg">http://faq.goezgo.tw/jpg/freight.jpg</a>   
+            </td>
+        </tr>
+		<tr>
+            <td colspan="3" style="color: red;font-weight: 700;">
+            色板：<a href="http://faq.goezgo.tw/board/texture">http://faq.goezgo.tw/board/texture</a> 
+			<ul>
+                <li>門板&抽頭更換顏色為E1耐火板需補差額：<span id="price_difference">NT$0</span></li>
+				<li>門板&抽頭更換顏色為E0或浮雕面耐火板需補差額：<span id="price_difference_multiple">NT$0</span></li>
+            </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+	</div>
+    </div>
+    <!--清单3 end-->	
+    
+	<!--提示框-->
+	<div id="tipspop" class="modal fade in" style="display: none;">		
+		<div class="modal-body">
+			<p>You can add some text here.</p>
+		</div>
+		<div class="modal-footer">
+			<a href="javascript:void(0);" class="btn btn-success" data-dismiss="modal">確定</a>
+		</div>			
+	</div>
+	<!--提示框 end-->
+	
+</div>
+<div style="text-align:center;clear:both;"></div>
+
+<script src='js/jquery-1.12.2.js'></script>
+<script src='js/jquery-ui.js'></script>
+<script src='js/bootstrap.min.js'></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+
+<script type="text/javascript">
+window.onbeforeunload = function(){
+	return '您剛才選擇的數據是否還要保留？';
+};
+</script> 
+
+</body>
+</html>
